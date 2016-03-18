@@ -598,7 +598,7 @@
             this.MaximumSize = new System.Drawing.Size(600, 371);
             this.MinimumSize = new System.Drawing.Size(378, 371);
             this.Name = "calculator";
-            this.Text = "计算器";
+            this.Text = "Calculator";
             this.Load += new System.EventHandler(this.calculator_Load);
             this.Standard.ResumeLayout(false);
             this.Standard.PerformLayout();
