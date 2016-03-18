@@ -1,0 +1,9 @@
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\bin\Debug\Easy Calculator in CS.exe.config
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\obj\Debug\Easy Calculator in CS.csprojResolveAssemblyReference.cache
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\obj\Debug\Easy_Calculator_in_CS.Properties.Resources.resources
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\obj\Debug\Easy Calculator in CS.csproj.GenerateResource.Cache
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\bin\Debug\Easy Calculator in CS.exe
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\bin\Debug\Easy Calculator in CS.pdb
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\obj\Debug\Easy Calculator in CS.exe
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\obj\Debug\Easy Calculator in CS.pdb
+e:\users\victor\documents\visual studio 2015\Projects\Easy Calculator in CS\Easy Calculator in CS\obj\Debug\Easy_Calculator_in_CS.calculator.resources
