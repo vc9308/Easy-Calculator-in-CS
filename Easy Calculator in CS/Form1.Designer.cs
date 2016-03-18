@@ -59,6 +59,7 @@
             this.buttonPlusMinus = new System.Windows.Forms.Button();
             this.textBoxHistory = new System.Windows.Forms.RichTextBox();
             this.buttonClearHistory = new System.Windows.Forms.Button();
+            this.buttonPi = new System.Windows.Forms.Button();
             this.Standard.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -421,6 +422,7 @@
             // 
             // Standard
             // 
+            this.Standard.Controls.Add(this.buttonPi);
             this.Standard.Controls.Add(this.textBox3);
             this.Standard.Controls.Add(this.buttonCE);
             this.Standard.Controls.Add(this.textBox2);
@@ -564,6 +566,23 @@
             this.buttonClearHistory.TabIndex = 3;
             this.buttonClearHistory.UseVisualStyleBackColor = false;
             // 
+            // buttonPi
+            // 
+            this.buttonPi.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonPi.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonPi.FlatAppearance.BorderSize = 0;
+            this.buttonPi.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.buttonPi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPi.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPi.Location = new System.Drawing.Point(241, 271);
+            this.buttonPi.Name = "buttonPi";
+            this.buttonPi.Size = new System.Drawing.Size(60, 60);
+            this.buttonPi.TabIndex = 29;
+            this.buttonPi.Text = "π";
+            this.buttonPi.UseVisualStyleBackColor = false;
+            this.buttonPi.Click += new System.EventHandler(this.buttonPi_Click);
+            // 
             // calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -616,6 +635,7 @@
         private System.Windows.Forms.Button buttonClearHistory;
         private System.Windows.Forms.Button buttonCE;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button buttonPi;
     }
 }
 

@@ -24,13 +24,13 @@ namespace Easy_Calculator_in_CS
 
         bool statusAdd, statusSub, statusMul, statusDiv, statusEquare, statusSquare, statusSqrt = false;
 
-        public void addNum(char num)
+        public void addNum(String num)
         {
             if (statusAdd || statusSub || statusMul || statusDiv)
             {
                 textBox1.Text = "0";
             }
-            if (num == '.')
+            if (num == ".")
             {
                 if (textBox1.Text.IndexOf('.') > -1)    // .1.
                 {
@@ -89,7 +89,7 @@ namespace Easy_Calculator_in_CS
             {
                 textBox1.Text = "0";
             }
-            addNum('0');
+            addNum("0");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -105,7 +105,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('1');
+            addNum("1");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -121,7 +121,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('2');
+            addNum("2");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -137,7 +137,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('3');
+            addNum("3");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -153,7 +153,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('4');
+            addNum("4");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -169,7 +169,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('5');
+            addNum("5");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -185,7 +185,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('6');
+            addNum("6");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -201,7 +201,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('7');
+            addNum("7");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -217,7 +217,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('8');
+            addNum("8");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -233,7 +233,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('9');
+            addNum("9");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -249,7 +249,7 @@ namespace Easy_Calculator_in_CS
                 textBox1.Text = "0";
                 temp1 = 0;
             }
-            addNum('.');
+            addNum(".");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
@@ -390,6 +390,22 @@ namespace Easy_Calculator_in_CS
         private void calculator_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonPi_Click(object sender, EventArgs e)
+        {
+            if (statusSquare || statusSqrt)
+            {
+                textBox1.Text = "0";
+                textBox2.Text = "";
+            }
+            if (statusEquare == true)
+            {
+                textBox1.Text = "0";
+                temp1 = 0;
+            }
+            addNum("3.14159265359");
+            statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
         }
 
         private void buttonPlusMinus_Click(object sender, EventArgs e)
