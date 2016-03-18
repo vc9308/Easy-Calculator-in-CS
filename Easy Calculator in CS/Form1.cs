@@ -339,10 +339,16 @@ namespace Easy_Calculator_in_CS
                 }
             }
             if (textBox2.Text.IndexOf('+') > -1 || textBox2.Text.IndexOf('-') > -1)
-                if(textBox2.Text.IndexOf('+') == textBox2.Text.IndexOf("E+"))
+            {
+                if (textBox2.Text.IndexOf('+') == textBox2.Text.LastIndexOf('+') && textBox2.Text.IndexOf("E") > -1)
+                {
+
+                }
+                else
                 {
                     textBox2.Text = "(" + textBox2.Text + ")";
                 }
+            }
             textBox2.Text = textBox2.Text + " × ";
             pos = 3;
             statusAdd = statusSub = statusDiv = statusEquare = statusSquare = statusSqrt = false;
@@ -371,10 +377,16 @@ namespace Easy_Calculator_in_CS
                 }
             }
             if (textBox2.Text.IndexOf('+') > -1 || textBox2.Text.IndexOf('-') > -1)
-                if (textBox2.Text.IndexOf('+') == textBox2.Text.IndexOf("E+"))
+            {
+                if (textBox2.Text.IndexOf('+') == textBox2.Text.LastIndexOf('+') && textBox2.Text.IndexOf("E") > -1)
+                {
+
+                }
+                else
                 {
                     textBox2.Text = "(" + textBox2.Text + ")";
                 }
+            }
             textBox2.Text = textBox2.Text + " ÷ ";
             pos = 4;
             statusAdd = statusSub = statusMul = statusEquare = statusSquare = statusSqrt = false;
@@ -418,6 +430,11 @@ namespace Easy_Calculator_in_CS
             }
             addNum("3.14159265359");
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = statusSqrt = false;
+        }
+
+        private void buttonClearHistory_Click(object sender, EventArgs e)
+        {
+            textBoxHistory.Text = "";
         }
 
         private void buttonPlusMinus_Click(object sender, EventArgs e)

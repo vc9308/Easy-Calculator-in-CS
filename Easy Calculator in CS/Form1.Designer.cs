@@ -582,6 +582,7 @@
             this.buttonClearHistory.Size = new System.Drawing.Size(30, 30);
             this.buttonClearHistory.TabIndex = 3;
             this.buttonClearHistory.UseVisualStyleBackColor = false;
+            this.buttonClearHistory.Click += new System.EventHandler(this.buttonClearHistory_Click);
             // 
             // calculator
             // 
