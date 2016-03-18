@@ -52,6 +52,7 @@
             this.buttonSqrt = new System.Windows.Forms.Button();
             this.buttonBS = new System.Windows.Forms.Button();
             this.Standard = new System.Windows.Forms.GroupBox();
+            this.buttonPi = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.buttonCE = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -59,7 +60,6 @@
             this.buttonPlusMinus = new System.Windows.Forms.Button();
             this.textBoxHistory = new System.Windows.Forms.RichTextBox();
             this.buttonClearHistory = new System.Windows.Forms.Button();
-            this.buttonPi = new System.Windows.Forms.Button();
             this.Standard.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -241,7 +241,7 @@
             this.buttonEquare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.buttonEquare.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightGray;
             this.buttonEquare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEquare.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEquare.Font = new System.Drawing.Font("Calibri", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonEquare.Location = new System.Drawing.Point(301, 210);
             this.buttonEquare.Name = "buttonEquare";
             this.buttonEquare.Size = new System.Drawing.Size(60, 120);
@@ -412,11 +412,11 @@
             this.buttonBS.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.buttonBS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBS.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBS.Image = ((System.Drawing.Image)(resources.GetObject("buttonBS.Image")));
             this.buttonBS.Location = new System.Drawing.Point(241, 90);
             this.buttonBS.Name = "buttonBS";
             this.buttonBS.Size = new System.Drawing.Size(60, 60);
             this.buttonBS.TabIndex = 22;
-            this.buttonBS.Text = "<--";
             this.buttonBS.UseVisualStyleBackColor = false;
             this.buttonBS.Click += new System.EventHandler(this.buttonBS_Click);
             // 
@@ -454,6 +454,23 @@
             this.Standard.Size = new System.Drawing.Size(360, 330);
             this.Standard.TabIndex = 1;
             this.Standard.TabStop = false;
+            // 
+            // buttonPi
+            // 
+            this.buttonPi.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonPi.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.buttonPi.FlatAppearance.BorderSize = 0;
+            this.buttonPi.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.buttonPi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonPi.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPi.Location = new System.Drawing.Point(241, 271);
+            this.buttonPi.Name = "buttonPi";
+            this.buttonPi.Size = new System.Drawing.Size(60, 60);
+            this.buttonPi.TabIndex = 29;
+            this.buttonPi.Text = "π";
+            this.buttonPi.UseVisualStyleBackColor = false;
+            this.buttonPi.Click += new System.EventHandler(this.buttonPi_Click);
             // 
             // textBox3
             // 
@@ -565,23 +582,6 @@
             this.buttonClearHistory.Size = new System.Drawing.Size(30, 30);
             this.buttonClearHistory.TabIndex = 3;
             this.buttonClearHistory.UseVisualStyleBackColor = false;
-            // 
-            // buttonPi
-            // 
-            this.buttonPi.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonPi.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.buttonPi.FlatAppearance.BorderSize = 0;
-            this.buttonPi.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
-            this.buttonPi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonPi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonPi.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPi.Location = new System.Drawing.Point(241, 271);
-            this.buttonPi.Name = "buttonPi";
-            this.buttonPi.Size = new System.Drawing.Size(60, 60);
-            this.buttonPi.TabIndex = 29;
-            this.buttonPi.Text = "π";
-            this.buttonPi.UseVisualStyleBackColor = false;
-            this.buttonPi.Click += new System.EventHandler(this.buttonPi_Click);
             // 
             // calculator
             // 

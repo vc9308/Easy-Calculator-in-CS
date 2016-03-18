@@ -277,9 +277,12 @@ namespace Easy_Calculator_in_CS
             {
                 temp1 = Convert.ToDouble(textBox1.Text);
             }
-            if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+            if(textBox2.Text.Length > 0)
             {
-                textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+                {
+                    textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                }
             }
             textBox2.Text = textBox2.Text + " + ";
             pos = 1;
@@ -301,9 +304,12 @@ namespace Easy_Calculator_in_CS
             {
                 temp1 = Convert.ToDouble(textBox1.Text);
             }
-            if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+            if (textBox2.Text.Length > 0)
             {
-                textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+                {
+                    textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                }
             }
             textBox2.Text = textBox2.Text + " - ";
             pos = 2;
@@ -325,11 +331,14 @@ namespace Easy_Calculator_in_CS
             {
                 temp1 = Convert.ToDouble(textBox1.Text);
             }
-            if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+            if (textBox2.Text.Length > 0)
             {
-                textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+                {
+                    textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                }
             }
-            if(textBox2.Text.IndexOf('+') > -1 || textBox2.Text.IndexOf('-') > -1)
+            if (textBox2.Text.IndexOf('+') > -1 || textBox2.Text.IndexOf('-') > -1)
                 if(textBox2.Text.IndexOf('+') == textBox2.Text.IndexOf("E+"))
                 {
                     textBox2.Text = "(" + textBox2.Text + ")";
@@ -354,9 +363,12 @@ namespace Easy_Calculator_in_CS
             {
                 temp1 = Convert.ToDouble(textBox1.Text);
             }
-            if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+            if (textBox2.Text.Length > 0)
             {
-                textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                if (textBox2.Text[textBox2.Text.Length - 1] == ' ')
+                {
+                    textBox2.Text = textBox2.Text.Trim(' ', '+', '-', '×', '÷');
+                }
             }
             if (textBox2.Text.IndexOf('+') > -1 || textBox2.Text.IndexOf('-') > -1)
                 if (textBox2.Text.IndexOf('+') == textBox2.Text.IndexOf("E+"))
