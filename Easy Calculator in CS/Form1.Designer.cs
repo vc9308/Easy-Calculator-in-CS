@@ -60,6 +60,8 @@
             this.buttonPlusMinus = new System.Windows.Forms.Button();
             this.textBoxHistory = new System.Windows.Forms.RichTextBox();
             this.buttonClearHistory = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
             this.Standard.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -438,7 +440,6 @@
             this.Standard.Controls.Add(this.button3);
             this.Standard.Controls.Add(this.button2);
             this.Standard.Controls.Add(this.button1);
-            this.Standard.Controls.Add(this.buttonEquare);
             this.Standard.Controls.Add(this.buttonSub);
             this.Standard.Controls.Add(this.button6);
             this.Standard.Controls.Add(this.button5);
@@ -449,6 +450,7 @@
             this.Standard.Controls.Add(this.button8);
             this.Standard.Controls.Add(this.Button7);
             this.Standard.Controls.Add(this.textBox1);
+            this.Standard.Controls.Add(this.buttonEquare);
             this.Standard.Location = new System.Drawing.Point(0, -1);
             this.Standard.Name = "Standard";
             this.Standard.Size = new System.Drawing.Size(360, 330);
@@ -476,7 +478,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.SystemColors.Info;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 1.5F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.textBox3.Location = new System.Drawing.Point(326, 28);
             this.textBox3.Multiline = true;
@@ -563,7 +565,7 @@
             this.textBoxHistory.Location = new System.Drawing.Point(358, -2);
             this.textBoxHistory.Name = "textBoxHistory";
             this.textBoxHistory.ReadOnly = true;
-            this.textBoxHistory.Size = new System.Drawing.Size(223, 331);
+            this.textBoxHistory.Size = new System.Drawing.Size(223, 295);
             this.textBoxHistory.TabIndex = 2;
             this.textBoxHistory.Text = "";
             // 
@@ -577,12 +579,36 @@
             this.buttonClearHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonClearHistory.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonClearHistory.Image = ((System.Drawing.Image)(resources.GetObject("buttonClearHistory.Image")));
-            this.buttonClearHistory.Location = new System.Drawing.Point(533, 286);
+            this.buttonClearHistory.Location = new System.Drawing.Point(546, 295);
             this.buttonClearHistory.Name = "buttonClearHistory";
             this.buttonClearHistory.Size = new System.Drawing.Size(30, 30);
             this.buttonClearHistory.TabIndex = 3;
             this.buttonClearHistory.UseVisualStyleBackColor = false;
             this.buttonClearHistory.Click += new System.EventHandler(this.buttonClearHistory_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BackColor = System.Drawing.SystemColors.Info;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.richTextBox1.Location = new System.Drawing.Point(358, 292);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(10, 36);
+            this.richTextBox1.TabIndex = 4;
+            this.richTextBox1.Text = "";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BackColor = System.Drawing.SystemColors.Info;
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 1.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(361, 287);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox4.Size = new System.Drawing.Size(220, 42);
+            this.textBox4.TabIndex = 5;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // calculator
             // 
@@ -590,6 +616,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(580, 328);
             this.Controls.Add(this.buttonClearHistory);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.textBoxHistory);
             this.Controls.Add(this.Standard);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -603,6 +631,7 @@
             this.Standard.ResumeLayout(false);
             this.Standard.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -637,6 +666,8 @@
         private System.Windows.Forms.Button buttonCE;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button buttonPi;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox textBox4;
     }
 }
 
