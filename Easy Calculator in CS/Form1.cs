@@ -70,14 +70,7 @@ namespace Easy_Calculator_in_CS
                     textBox1.Text = (temp1 * temp2).ToString();
                     break;
                 case 4:
-                    if (temp2 != 0)
-                    {
-                        textBox1.Text = (temp1 / temp2).ToString();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error.");
-                    }
+                    textBox1.Text = (temp1 / temp2).ToString();
                     break;
             }
             temp1 = Convert.ToDouble(textBox1.Text);
