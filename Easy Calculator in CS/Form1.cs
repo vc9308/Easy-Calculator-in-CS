@@ -477,17 +477,39 @@ namespace Easy_Calculator_in_CS
 
         private void buttonSquare_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            temp2 = Convert.ToDouble(textBox1.Text);
+            if (textBox2.Text.Length == 0)
             {
                 textBox2.Text = "sqr(" + textBox1.Text + ")";
+                textBox1.Text = (temp2 * temp2).ToString();
             }
             else
             {
-                textBox2.Text = "sqr(" + textBox2.Text + textBox1.Text + ")";
+                switch (pos)
+                {
+                    case 1:
+                        textBox1.Text = ((temp1 + temp2) * (temp1 + temp2)).ToString();
+                        textBox2.Text = "sqr(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 2:
+                        textBox1.Text = ((temp1 - temp2) * (temp1 - temp2)).ToString();
+                        textBox2.Text = "sqr(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 3:
+                        textBox1.Text = ((temp1 * temp2) * (temp1 * temp2)).ToString();
+                        textBox2.Text = "sqr(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 4:
+                        textBox1.Text = ((temp1 / temp2) * (temp1 / temp2)).ToString();
+                        textBox2.Text = "sqr(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 0:
+                        textBox1.Text = (temp2 * temp2).ToString();
+                        textBox2.Text = "sqr(" + textBox2.Text + ")";
+                        break;
+                }
             }
             temp1 = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = (temp1 * temp1).ToString();
-
             pos = 0;
             statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSqrt = false;
             statusSquare = true;
@@ -495,20 +517,42 @@ namespace Easy_Calculator_in_CS
 
         private void buttonSqrt_Click(object sender, EventArgs e)
         {
-            if (textBox2.Text == "")
+            temp2 = Convert.ToDouble(textBox1.Text);
+            if (textBox2.Text.Length == 0)
             {
-                textBox2.Text = "sqr(" + textBox1.Text + ")";
+                textBox2.Text = "sqrt(" + textBox1.Text + ")";
+                textBox1.Text = Math.Sqrt(temp2).ToString();
             }
             else
             {
-                textBox2.Text = "sqr(" + textBox2.Text + textBox1.Text + ")";
+                switch (pos)
+                {
+                    case 1:
+                        textBox1.Text = Math.Sqrt(temp1 + temp2).ToString();
+                        textBox2.Text = "sqrt(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 2:
+                        textBox1.Text = Math.Sqrt(temp1 - temp2).ToString();
+                        textBox2.Text = "sqrt(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 3:
+                        textBox1.Text = Math.Sqrt(temp1 * temp2).ToString();
+                        textBox2.Text = "sqrt(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 4:
+                        textBox1.Text = Math.Sqrt(temp1 / temp2).ToString();
+                        textBox2.Text = "sqrt(" + textBox2.Text + temp2.ToString() + ")";
+                        break;
+                    case 0:
+                        textBox1.Text = Math.Sqrt(temp2).ToString();
+                        textBox2.Text = "sqrt(" + textBox2.Text + ")";
+                        break;
+                }
             }
             temp1 = Convert.ToDouble(textBox1.Text);
-            textBox1.Text = Math.Sqrt(temp1).ToString();
-
             pos = 0;
-            statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSquare = false;
-            statusSqrt = true;
+            statusAdd = statusSub = statusMul = statusDiv = statusEquare = statusSqrt = false;
+            statusSquare = true;
         }
 
         private void buttonEquare_Click(object sender, EventArgs e)
