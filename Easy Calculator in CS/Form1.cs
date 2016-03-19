@@ -552,37 +552,51 @@ namespace Easy_Calculator_in_CS
         {
             operation();
             textBoxHistory.Text = textBoxHistory.Text + "  " + textBox2.Text + " =\n";
-            if (textBox1.Text.Length < 5)
+            if (textBox1.Text.Length < 3)
             {
                 for(int i = 0; i < 26; i++)
                 {
                     textBoxHistory.Text = textBoxHistory.Text + " ";
                 }
             }
-            else if (textBox1.Text.Length < 10)
+            else if (textBox1.Text.Length < 6)
             {
-                for (int i = 0; i < 21; i++)
+                for (int i = 0; i < 23; i++)
                 {
                     textBoxHistory.Text = textBoxHistory.Text + " ";
                 }
             }
-            else if (textBox1.Text.Length < 15)
+            else if (textBox1.Text.Length < 9)
+            {
+                for (int i = 0; i < 20; i++)
+                {
+                    textBoxHistory.Text = textBoxHistory.Text + " ";
+                }
+            }
+            else if (textBox1.Text.Length < 12)
             {
                 for (int i = 0; i < 16; i++)
                 {
                     textBoxHistory.Text = textBoxHistory.Text + " ";
                 }
             }
-            else if (textBox1.Text.Length < 20)
+            else if (textBox1.Text.Length < 15)
             {
-                for (int i = 0; i < 11; i++)
+                for (int i = 0; i < 13; i++)
                 {
                     textBoxHistory.Text = textBoxHistory.Text + " ";
                 }
             }
-            else if (textBox1.Text.Length < 25)
+            else if (textBox1.Text.Length < 18)
             {
-                for (int i = 0; i < 6; i++)
+                for (int i = 0; i < 10; i++)
+                {
+                    textBoxHistory.Text = textBoxHistory.Text + " ";
+                }
+            }
+            else if (textBox1.Text.Length < 21)
+            {
+                for (int i = 0; i < 7; i++)
                 {
                     textBoxHistory.Text = textBoxHistory.Text + " ";
                 }
